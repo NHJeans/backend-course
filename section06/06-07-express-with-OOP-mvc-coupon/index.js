@@ -1,6 +1,7 @@
 // const express = require('express') // 옛날방식 => commonjs 방식
 import express from "express"; // 요즘방식 => module 방식
 import { ProductController } from "./mvc/controllers/product.controller.js";
+import { CouponController } from "./mvc/controllers/coupon.controller.js";
 
 const app = express();
 const port = 3000;
@@ -8,6 +9,10 @@ const port = 3000;
 const ProductController = new ProductController();
 app.post("/products/buy", ProductController.buyProduct); // 상품 구매하기 API
 app.get("/products/refund", ProductController.refundProduct); // 상품 환불하기 API
+
+// 쿠폰(상품권) API
+const couponController = new CouponController();
+app.post("/coupons/buy", couponController);
 
 // 게시판 API
 // app.get("/board/...")

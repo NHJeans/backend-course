@@ -4,7 +4,5 @@ function Controller(aaaaaaaa: any) {
   console.log("=============");
 }
 
-// @Controller
-// class CatsController {
-
-// }
+@Controller
+class CatsController {}

@@ -4,7 +4,7 @@
 // class Monster {
 //   // power = 10;                          //! => public, private, protected, readonly 중 1개라도 있으면 생략가능
 
-//   constructor(public power: number) {
+//   constructor(protected power: number) {
 //     // this.power = power;                //! => public, private, protected, readonly 중 1개라도 있으면 생략가능
 //   }
 
@@ -26,5 +26,6 @@
 // const mymonster1 = new 공중몬스터(20);
 // mymonster1.attack1();
 // mymonster1.attack2();
-// console.log(mymonster1.power); // 밖에서 접근 가능
-// mymonster1.power = 10; // 밖에서 수정 가능
+// console.log(mymonster1.power); // 밖에서 접근 불가
+// mymonster1.power = 10; // 밖에서 수정 불가
+

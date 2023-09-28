@@ -9,5 +9,6 @@
     "experimentalDecorators": true // 데코레이터 추가하기
   },
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Recommended"
+  "display": "Recommended",
+  "exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
 }
